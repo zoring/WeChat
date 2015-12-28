@@ -8,10 +8,12 @@ int main(int argc, char *argv[])
         MainWindow w;
         QTextCodec::setCodecForLocale(QTextCodec::codecForLocale());//设置编码
         LoginDialog dlg;
-        if (dlg.exec() == QDialog::Accepted)
-        {
-           w.show();
-           return a.exec();
-        }
-        else return 0;
+        w.show();
+        return a.exec();
+//        if (dlg.exec() == QDialog::Accepted)
+//        {
+//           w.show();
+//           return a.exec();
+//        }
+//        else return 0;
 }

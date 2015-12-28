@@ -11,13 +11,20 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = WeChat
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
         mainwindow.cpp \
-    logindialog.cpp
+    logindialog.cpp \
+    resigndialog.cpp \
+    frienddialog.cpp \
+    myqlistwidgetitem.cpp
 
 HEADERS  += mainwindow.h \
-    logindialog.h
+    logindialog.h \
+    resigndialog.h \
+    frienddialog.h \
+    myqlistwidgetitem.h
 
 FORMS    += mainwindow.ui \
-    logindialog.ui
+    logindialog.ui \
+    resigndialog.ui \
+    frienddialog.ui

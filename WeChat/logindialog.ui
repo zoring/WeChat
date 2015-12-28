@@ -22,8 +22,11 @@
      <height>27</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="placeholderText">
-    <string>UserName</string>
+    <string>用户名</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="PassWordEdit">
@@ -38,6 +41,9 @@
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
    </property>
+   <property name="placeholderText">
+    <string>密码</string>
+   </property>
   </widget>
   <widget class="QLabel" name="UserNameTip">
    <property name="geometry">
@@ -49,7 +55,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>UserName</string>
+    <string>用户名:</string>
    </property>
   </widget>
   <widget class="QLabel" name="PassWordTip">
@@ -62,7 +68,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PassWord</string>
+    <string>密码:</string>
    </property>
   </widget>
   <widget class="QPushButton" name="QuitButton">
@@ -75,7 +81,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Quit</string>
+    <string>退出</string>
    </property>
   </widget>
   <widget class="QPushButton" name="LoginButton">
@@ -88,7 +94,20 @@
     </rect>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string>登陆</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LogOn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>250</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>注册</string>
    </property>
   </widget>
  </widget>
