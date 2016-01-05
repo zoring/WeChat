@@ -33,7 +33,8 @@ public:
 private:
     int GroundId;
     std::list<Person> personlist;
-
+    QLabel *name;  //用户名  
+    Label *sign;  //个性签名  
 
 
 GetSetNameOfProperty (std::string, GroundName, private)

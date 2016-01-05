@@ -9,6 +9,8 @@ PersonGroundItem::PersonGroundItem(const QString Groundname, QListWidget* itemli
 
    PersonGroundItem::setGroundName( Groundname.toStdString());
    PersonGroundItem::setIsHidden(true);
+   QLabel *name;  //用户名  
+       QLabel *sign;  //个性签名  
 }
 
 //del person from ground

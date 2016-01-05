@@ -10,30 +10,25 @@
     return m_##name;\
     }
 
-#ifndef PERSONGROUNDITEM_H
-#define PERSONGROUNDITEM_H
+#ifndef MYQLISTWIDGETITEM_H
+#define MYQLISTWIDGETITEM_H
 #include <QListWidgetItem>
 #include <QListWidget>
-#include <list>
+#include <vector>
 #include "personlist.h"
-#include "person.h"
-
-using namespace std;
-class PersonGroundItem: public QListWidgetItem
+class MyQlistWidgetItem: public QListWidgetItem
 {
 public:
-    PersonGroundItem(const QString GroundName, QListWidget* itemlist);
+    MyQlistWidgetItem(const QString GroundName, QListWidget* itemlist);
 
 public:
-    void AddPerson(Person const Personid);
-    void DelPerson(Person const Personid);
-    bool operator ==(PersonGroundItem other);
-    list<Person>& getPersonList();
-    int getgroundId();
+    void setGroundId(int id);
+    Person getPerson(int id);
+    void AddPerson(int id);
+    void 
 private:
     int GroundId;
-    std::list<Person> personlist;
-
+    vector<PersonList> Personlist;
 
 
 GetSetNameOfProperty (std::string, GroundName, private)
@@ -41,7 +36,7 @@ GetSetNameOfProperty (std::string, ImageUrl, private)
 GetSetNameOfProperty(bool,IsHidden,private)
 
 };
-#endif // PERSONGROUNDITEM_H
+#endif // MYQLISTWIDGETITEM_H
 
 
 

@@ -16,13 +16,17 @@ SOURCES += main.cpp\
     logindialog.cpp \
     resigndialog.cpp \
     frienddialog.cpp \
-    myqlistwidgetitem.cpp
+    personlist.cpp \
+    person.cpp \
+    persongrounditem.cpp
 
 HEADERS  += mainwindow.h \
     logindialog.h \
     resigndialog.h \
     frienddialog.h \
-    myqlistwidgetitem.h
+    personlist.h \
+    person.h \
+    persongrounditem.h
 
 FORMS    += mainwindow.ui \
     logindialog.ui \
